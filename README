@@ -3,5 +3,13 @@ Riak does not provide a call to delete a bucket unless the bucket is empty. Alth
 Here's a little node script to delete all of the keys in a bucket. Use with caution; with great power comes great responsibility
 
 
+Install npm:
+    http://npmjs.org
+    I found sudo to fail sometimes, but sudo su to root to work
+    > sudo su
+    > curl http://npmjs.org/install.sh | sh
+
+Install riak-js lib
+    npm install riak-js@latest
 Set your riak IP and bucket, then fire away:
-node delete.js
+    node delete.js
