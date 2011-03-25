@@ -1,3 +1,7 @@
 Riak does not provide a call to delete a bucket unless the bucket is empty. Although this is just like S3 and usually fine, it can be very useful to do this when you're testing.
 
 Here's a little node script to delete all of the keys in a bucket. Use with caution; with great power comes great responsibility
+
+
+Set your riak IP and bucket, then fire away:
+node delete.js
